@@ -23,7 +23,6 @@ import com.hackillinois.hackillinoiscluehunt.clueHuntActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import eu.livotov.labs.android.camview.ScannerLiveView;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 /**
@@ -52,34 +51,8 @@ public class scannerFragment extends Fragment implements ZXingScannerView.Result
         position = sharedPreferences.getInt("clueNumber", 0);
         checkClue = clueListFragment.getClueID(position);
         maxClues = sharedPreferences.getInt("maxClues", 0);
-
         score = sharedPreferences.getInt("globalScore", 0);
 
-        //Setup qr code scanner
-        /*camera.setHudVisible(false);
-        camera.setScannerViewEventListener(new ScannerLiveView.ScannerViewEventListener() {
-            @Override
-            public void onScannerStarted(ScannerLiveView scanner) {
-                Toast.makeText(getContext(), "Hold camera steady", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onScannerStopped(ScannerLiveView scanner) {
-            }
-
-            @Override
-            public void onScannerError(Throwable err) {
-            }
-
-            @Override
-            public void onCodeScanned(String data) {
-                if(scannedRightQR(data)){
-                    scanSucceeded();
-                }else{
-                    Toast.makeText(getActivity(), "Wrong QR Code Scanned", Toast.LENGTH_LONG).show();
-                }
-            }
-        });*/
         camera.setResultHandler(this);
 
         return view;

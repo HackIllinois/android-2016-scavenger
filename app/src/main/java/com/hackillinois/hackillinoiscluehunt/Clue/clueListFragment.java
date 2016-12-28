@@ -148,7 +148,6 @@ public class clueListFragment extends Fragment {
     @Override
     public void onPause(){
         super.onPause();
-        //ref.removeEventListener(listener);
     }
 
     public static String getClueID(int position){
