@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu">
+
+        <item
+            android:id="@+id/clueList"
+            android:title="Clues"
+            android:icon="@drawable/ic_collections_black_24dp"
+            android:checked="false"/>
+        <item
+            android:title="Leaderboard"
+            android:id="@+id/leaderBoard"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:checked="false"/>
+        <item
+            android:title="About"
+            android:id="@+id/about"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:checked="false"/>
+    </group>
+
+</menu>

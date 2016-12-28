@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <com.hackillinois.hackillinoiscluehunt.CustomTextViews.TextViewFontGotham
+        android:id="@+id/clueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Current Clue"
+        android:textSize="35sp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/dynamicImage"
+        android:layout_below="@+id/clueTitle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:contentDescription="Clue Image" />
+
+    <com.hackillinois.hackillinoiscluehunt.CustomTextViews.TextViewFontBrandon
+        android:id="@+id/clueHint"
+        android:layout_below="@+id/dynamicImage"
+        android:layout_marginTop="20dp"
+        android:text="Hint"
+        android:layout_centerHorizontal="true"
+        android:textSize="23sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/scanButton1"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        android:text="Scan"/>
+
+</RelativeLayout>

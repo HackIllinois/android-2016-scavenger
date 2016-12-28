@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/userProfPic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dip"
+        android:layout_marginEnd="6dip"
+        android:contentDescription="Profile Pic"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/userProfPic"
+        android:layout_toRightOf="@+id/userProfPic"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall">
+
+        <com.hackillinois.hackillinoiscluehunt.CustomTextViews.TextViewFontBrandon
+            android:id="@+id/userName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:textSize="19sp"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:text="Name" />
+
+        <com.hackillinois.hackillinoiscluehunt.CustomTextViews.TextViewFontBrandon
+            android:id="@+id/userScore"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textSize="19sp"
+            android:gravity="end"
+            android:text="filler"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

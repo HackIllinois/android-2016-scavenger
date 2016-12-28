@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cluePreview"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dip"
+        android:layout_marginEnd="6dip"
+        android:contentDescription="Clue Preview"/>
+
+    <com.hackillinois.hackillinoiscluehunt.CustomTextViews.TextViewFontBrandon
+        android:id="@+id/clueName"
+        android:layout_toEndOf="@+id/cluePreview"
+        android:layout_toRightOf="@+id/cluePreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_centerVertical="true"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:text="Name"/>
+
+</RelativeLayout>

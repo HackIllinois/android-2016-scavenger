@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hackillinois.hackillinoiscluehunt.CustomTextViews.TextViewFontBrandon
+        android:id="@+id/infoBox"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:text="@string/info_text"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_below="@id/infoBox"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="OK"
+        android:textSize="17sp"
+        android:textColor="@color/accent"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

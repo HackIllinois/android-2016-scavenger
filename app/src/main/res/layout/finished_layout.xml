@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hackillinois.hackillinoiscluehunt.CustomTextViews.TextViewFontGotham
+        android:id="@+id/moveOnBanner"
+        android:text="Congrats!"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hackillinois.hackillinoiscluehunt.CustomTextViews.TextViewFontBrandon
+        android:id="@+id/finished_text"
+        android:text="@string/finished"
+        android:layout_below="@id/moveOnBanner"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="12dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@+id/finished_text"
+        android:src="@drawable/logo_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+</RelativeLayout>
